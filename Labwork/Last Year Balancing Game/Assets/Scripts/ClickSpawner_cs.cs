@@ -36,7 +36,6 @@ public class ClickSpawner_cs : MonoBehaviour
             gameScore++;
             Instantiate(spawnThis, point, Quaternion.identity);
 
-            gameScore++;
         }
     }
 }

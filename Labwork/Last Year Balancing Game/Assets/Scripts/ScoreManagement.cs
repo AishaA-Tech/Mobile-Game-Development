@@ -7,6 +7,7 @@ public class ScoreManagement : MonoBehaviour
 {
     public int gameScore;
     public TextMeshProUGUI scoreCount;
+    public GameObject ClickSpawner;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,6 +18,7 @@ public class ScoreManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       gameScore = ClickSpawner.GetComponent<ClickSpawner_cs>().gameScore;
+        scoreCount.text = "" + gameScore;
     }
 }
