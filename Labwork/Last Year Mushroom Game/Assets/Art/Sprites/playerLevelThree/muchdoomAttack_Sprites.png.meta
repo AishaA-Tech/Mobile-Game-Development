@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: c58d3d84f5f78384a91b27bff1558db0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1536651075703382678
+    second: muchdoomAttack_Sprites_0
+  - first:
+      213: -767015642263207080
+    second: muchdoomAttack_Sprites_1
+  - first:
+      213: -1993413464053057716
+    second: muchdoomAttack_Sprites_2
+  - first:
+      213: 9168808392716426124
+    second: muchdoomAttack_Sprites_3
+  - first:
+      213: -823844812525220122
+    second: muchdoomAttack_Sprites_4
+  - first:
+      213: -5964460365172955853
+    second: muchdoomAttack_Sprites_5
+  - first:
+      213: 4477351003383580321
+    second: muchdoomAttack_Sprites_6
+  - first:
+      213: 3898092649060150998
+    second: muchdoomAttack_Sprites_7
+  - first:
+      213: 4624623070862935604
+    second: muchdoomAttack_Sprites_8
+  - first:
+      213: 6183787729024519096
+    second: muchdoomAttack_Sprites_9
+  - first:
+      213: -1412540813895418283
+    second: muchdoomAttack_Sprites_10
+  - first:
+      213: 6318534973504988806
+    second: muchdoomAttack_Sprites_11
+  - first:
+      213: -747107794347777204
+    second: muchdoomAttack_Sprites_12
+  - first:
+      213: -2377148187894282412
+    second: muchdoomAttack_Sprites_13
+  - first:
+      213: 1238655113773030283
+    second: muchdoomAttack_Sprites_14
+  - first:
+      213: -1533178062125836207
+    second: muchdoomAttack_Sprites_15
+  - first:
+      213: 2175035353707256355
+    second: muchdoomAttack_Sprites_16
+  - first:
+      213: 2559744495821218750
+    second: muchdoomAttack_Sprites_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cfd7fa8204831498a7f19924f2ca19
+      internalID: -1536651075703382678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab446ec64c897949bad8b6cc9627504
+      internalID: -767015642263207080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceac5930f5484544bbe04779d331a6b1
+      internalID: -1993413464053057716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89020681fccf9e4189f372c8a10a7b1
+      internalID: 9168808392716426124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0065ff25348387d4a93938a42e966555
+      internalID: -823844812525220122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_5
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d332bfbc1968a104ba6089ea82342f46
+      internalID: -5964460365172955853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f721a8fbbcacd4489bb0baeda33ca3
+      internalID: 4477351003383580321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_7
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2848dd9485dbd0740b6298e675bae5da
+      internalID: 3898092649060150998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_8
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b7be2bfe5ac78a4282a9a4e2b6550d3
+      internalID: 4624623070862935604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_9
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddd7157b0c469c499ce61e709e6c84f
+      internalID: 6183787729024519096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fb50508477fc5c49afd8d3ac9e6715f
+      internalID: -1412540813895418283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_11
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26f4746969232d4e8fa5a52924dcba2
+      internalID: 6318534973504988806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muchdoomAttack_Sprites_12
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 0
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0038abf78562e04793e6a8ec5873db2
+      internalID: -747107794347777204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ba68dafbc7ea31249a73ce2c693b8a12
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      muchdoomAttack_Sprites_0: -1536651075703382678
+      muchdoomAttack_Sprites_1: -767015642263207080
+      muchdoomAttack_Sprites_10: -1412540813895418283
+      muchdoomAttack_Sprites_11: 6318534973504988806
+      muchdoomAttack_Sprites_12: -747107794347777204
+      muchdoomAttack_Sprites_2: -1993413464053057716
+      muchdoomAttack_Sprites_3: 9168808392716426124
+      muchdoomAttack_Sprites_4: -823844812525220122
+      muchdoomAttack_Sprites_5: -5964460365172955853
+      muchdoomAttack_Sprites_6: 4477351003383580321
+      muchdoomAttack_Sprites_7: 3898092649060150998
+      muchdoomAttack_Sprites_8: 4624623070862935604
+      muchdoomAttack_Sprites_9: 6183787729024519096
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
