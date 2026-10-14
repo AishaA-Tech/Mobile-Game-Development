@@ -36,4 +36,9 @@ public class DeviceInfoOverlay : MonoBehaviour
         Vector2 size = style.CalcSize(new GUIContent(info));
         GUI.Label(new Rect(40, 40, size.x + 20, size.y + 20), info, style);
     }
+
+    void Awake()
+    {
+        Application.targetFrameRate = 30;
+    }
 }
