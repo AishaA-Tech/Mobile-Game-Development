@@ -37,11 +37,11 @@ public class playerMovement : MonoBehaviour
     }
 
 
-    void JumpClimb() // Player jump and climb
+    void Jump(InputAction.CallbackContext context) // Player jump and climb
     {
         vertical = Input.GetAxis("Vertical");
 
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && !ladder_check && ground_check)
+        if ((context.performed) && !ladder_check && ground_check)
         {
             player_rb.AddForceY(player_jump, ForceMode2D.Impulse);
             jump_times ++; //jump made
@@ -53,7 +53,7 @@ public class playerMovement : MonoBehaviour
             climbing_check = true;
         }
         //Jump at ladders
-        else if (Input.GetKeyDown(KeyCode.Space) && ladder_check && ground_check)
+        else if ((context.performed) && ladder_check && ground_check)
         {
             player_rb.AddForceY(player_jump, ForceMode2D.Impulse);
             jump_times++; //jump made
@@ -61,10 +61,12 @@ public class playerMovement : MonoBehaviour
         
         if (!ground_check && (jump_times < 2))
         {
-            if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && !ladder_check)
+            if ((context.performed) && !ladder_check)
+            {
                 {
-                player_rb.AddForceY(player_jump, ForceMode2D.Impulse);
-                jump_times++; //jump made
+                    player_rb.AddForceY(player_jump, ForceMode2D.Impulse);
+                    jump_times++; //jump made
+                }
             }
         }
 
@@ -113,8 +115,6 @@ public class playerMovement : MonoBehaviour
     {
         player_rb.linearVelocity = new Vector2(horizontal_movement * player_speed, player_rb.linearVelocity.y);
 
-        JumpClimb();
-
         player_dead = GetComponent<playerStats>().is_dead; //always check for death
     }
 
@@ -141,3 +141,4 @@ public class playerMovement : MonoBehaviour
         
     }
 }
+

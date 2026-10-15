@@ -26,9 +26,9 @@ public class playerAnimations : MonoBehaviour
     void Update()
     {
         //PLAYER MOVING
-        horizontal_move = Input.GetAxisRaw("Horizontal") * player_speed;
+        //horizontal_move = Input.GetAxisRaw("Horizontal") * player_speed;
         // Getting horizontal movement of player based on movement script
-        player_animator.SetFloat("player_speed", Mathf.Abs(horizontal_move));
+        //player_animator.SetFloat("player_speed", Mathf.Abs(horizontal_move));
         // Sets bool in animator to same value, but positive regardless of direction
 
         //PLAYER ATTACKING
