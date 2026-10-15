@@ -1,11 +1,13 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
 public class playerMovement : MonoBehaviour
 {
     public float player_speed = 5.0f;
     public float player_jump = 5.0f;
+    float horizontal_movement;
 
     public bool ladder_check; //Variable that stores result for ladder interaction
     public bool climbing_check; //Variable that stores result for climbing check
@@ -109,20 +111,16 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //movement code
-        if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow) && player_rb != null)
-        {
-            player_rb.linearVelocityX = -player_speed;
-            player_renderer.flipX = false;
-        }
-        else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow) && player_rb != null )
-        {
-            player_rb.linearVelocityX = player_speed;
-            player_renderer.flipX = true;
-        }
+        player_rb.linearVelocity = new Vector2(horizontal_movement * player_speed, player_rb.linearVelocity.y);
+
         JumpClimb();
 
         player_dead = GetComponent<playerStats>().is_dead; //always check for death
+    }
+
+    public void Move(InputAction.CallbackContext context) //NEW INPUT SYSTEM
+    {
+        horizontal_movement = context.ReadValue<Vector2>().x;
     }
 
     private void FixedUpdate()
