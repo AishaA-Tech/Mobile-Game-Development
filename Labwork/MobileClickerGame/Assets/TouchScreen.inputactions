@@ -32,6 +32,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TouchPosition",
+                    "type": "Value",
+                    "id": "987ec4ea-4969-4a68-b905-c75d893e50e3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -39,7 +48,7 @@
                     "name": "",
                     "id": "f1092054-b36b-4d89-af32-78886c808394",
                     "path": "<Touchscreen>/Press",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Click",
@@ -50,7 +59,7 @@
                     "name": "",
                     "id": "32c0f6e8-9c7f-4955-a2d1-3d369892120c",
                     "path": "<Mouse>/press",
-                    "interactions": "Tap",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Click",
@@ -76,6 +85,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Swipe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "607a3cd4-3854-4cd6-8d31-a885164abcf0",
+                    "path": "<Touchscreen>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TouchPosition",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
