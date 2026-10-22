@@ -30,7 +30,12 @@ public class PlayerTouch : MonoBehaviour
         ClickAction.performed -= ClickedAction; //-+ unsubscribes from event
     }
 
-
+    //Checking the information of the action, reading its value
+    private void ClickedAction(InputAction.CallbackContext context)
+    {
+        bool StateValue = context.ReadValueAsButton(); //Gives info as boolean
+        Debug.Log(StateValue);
+    }
 
 
     // Update is called once per frame
