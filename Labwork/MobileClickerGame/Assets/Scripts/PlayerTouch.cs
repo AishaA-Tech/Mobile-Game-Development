@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
+using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't return errors
 
 public class PlayerTouch : MonoBehaviour
 {
     //Creating variables referencing input system
-    private PlayerInput PlayerInput;
+   // private PlayerInput PlayerInput;
     private InputAction ClickAction;
     private InputAction TouchPosition;
 
@@ -17,12 +19,12 @@ public class PlayerTouch : MonoBehaviour
         
     }
 
-    private void Awake()
+/*    private void Awake()
     {
         //Getting specific actions from the input action
-        PlayerInput = GetComponent<PlayerInput>();
-        ClickAction = PlayerInput.actions["Click"]; //Accessible by variable
-        TouchPosition = PlayerInput.actions["TouchPosition"];
+        //PlayerInput = GetComponent<PlayerInput>();
+        ClickAction = InputSystem.actions.FindAction("Click");
+        TouchPosition = InputSystem.actions.FindAction("TouchPosition");
     }
 
     //Checking if action has been performed
@@ -43,13 +45,22 @@ public class PlayerTouch : MonoBehaviour
 
         //Using screen touch position to attack objects
         Vector3 FoundPosition = Camera.main.ScreenToWorldPoint(TouchPosition.ReadValue<Vector2>());
-        Instantiate(PlayerTapArea, FoundPosition, PlayerTapArea.transform.rotation);
-    }
+        Debug.Log($"Input position: {TouchPosition.ReadValue<Vector2>()} world positoin: {FoundPosition}");
+        Instantiate(PlayerTapArea, TouchPosition.ReadValue<Vector2>(), PlayerTapArea.transform.rotation);
+    }*/
 
 
     // Update is called once per frame
     void Update()
     {
-
+        foreach (Touch touch in Touch.activeTouches)
+        { 
+            if (touch.isTap)
+            {
+                Instantiate(PlayerTapArea, Camera.main.ScreenToWorldPoint(touch.screenPosition), Quaternion.identity);
+                Debug.Log($"Screen pos of touch: {touch.screenPosition}");
+            }
+            break;
+        }
     }
 }
