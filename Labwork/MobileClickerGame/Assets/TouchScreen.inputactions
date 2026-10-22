@@ -1,0 +1,86 @@
+{
+    "version": 1,
+    "name": "TouchScreen",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "d5ed9f33-f86a-4c63-915b-c6a396f6a9d4",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "cfedbcb9-cad8-4081-8042-74dd3af944d3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DoubleClick",
+                    "type": "Button",
+                    "id": "2a4a8d94-4e6d-4f49-8b1e-0fe185bb326e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Swipe",
+                    "type": "Button",
+                    "id": "37e735bb-ff9e-4915-bba7-19ced18e9de0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f1092054-b36b-4d89-af32-78886c808394",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "32c0f6e8-9c7f-4955-a2d1-3d369892120c",
+                    "path": "<Mouse>/press",
+                    "interactions": "Tap",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4920e88d-9dc7-4690-958a-6aab668b30e3",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DoubleClick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c7e5ce68-16e8-4e87-9fe1-01d12a188843",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Swipe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
