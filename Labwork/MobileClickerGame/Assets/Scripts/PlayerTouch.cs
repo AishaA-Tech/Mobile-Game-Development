@@ -5,6 +5,7 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't retur
 
 public class PlayerTouch : MonoBehaviour
 {
+    public int score;
 
     //Player Tap Destroy Object
     public GameObject PlayerTapArea;
@@ -12,7 +13,7 @@ public class PlayerTouch : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        score = 0;
     }
 
 
