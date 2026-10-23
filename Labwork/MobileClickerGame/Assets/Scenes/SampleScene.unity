@@ -826,6 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6295706351d8740b7c64a3d5990fa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  score: 0
   PlayerTapArea: {fileID: 4327853479548283208, guid: eaa0406a7c5079e42a37c916a11fed70, type: 3}
 --- !u!4 &1301842573
 Transform:

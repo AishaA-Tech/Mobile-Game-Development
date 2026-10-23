@@ -16,7 +16,7 @@ public class TapAreaDestroy : MonoBehaviour
         if (other.CompareTag("Clickable"))
         {
             Destroy(other.gameObject);
-            chickenScore++;
+            
         }
     }
 
