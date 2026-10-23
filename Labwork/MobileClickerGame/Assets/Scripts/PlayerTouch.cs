@@ -57,7 +57,9 @@ public class PlayerTouch : MonoBehaviour
         { 
             if (touch.isTap)
             {
-                Instantiate(PlayerTapArea, Camera.main.ScreenToWorldPoint(touch.screenPosition), Quaternion.identity);
+                Vector3 CameraPos = Camera.main.ScreenToWorldPoint(touch.screenPosition);
+                CameraPos.z = 0;
+                Instantiate(PlayerTapArea, CameraPos, Quaternion.identity);
                 Debug.Log($"Screen pos of touch: {touch.screenPosition}");
             }
             break;
