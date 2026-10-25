@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4269074247617785235}
   - component: {fileID: 8180498100535056035}
   - component: {fileID: 6161615903349424169}
+  - component: {fileID: 7391283214005680759}
   m_Layer: 0
   m_Name: PlayerTapArea
   m_TagString: Untagged
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -144,3 +145,16 @@ PolygonCollider2D:
       - {x: 0.58778536, y: -0.80901694}
       - {x: 0.9510565, y: 0.30901712}
   m_UseDelaunayMesh: 1
+--- !u!114 &7391283214005680759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955158676051698475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb4eab9cfa40e5468eef5635a914bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TapAreaDestroy
+  Working: 0
