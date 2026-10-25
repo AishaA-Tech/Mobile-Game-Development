@@ -16,7 +16,7 @@ public class TapAreaDestroy : MonoBehaviour
     }
 
     //Tap area colliding with clickables
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Clickable"))
         {
