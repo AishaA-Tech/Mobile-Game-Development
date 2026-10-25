@@ -25,13 +25,13 @@ public class TapAreaDestroy : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
+        PlayerTouch.GetComponent<PlayerTouch>().Score = Score;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerTouch.GetComponent<PlayerTouch>().Score = Score;
         Debug.Log(Working);
     }
 }
