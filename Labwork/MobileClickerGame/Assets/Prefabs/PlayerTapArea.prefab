@@ -157,4 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb4eab9cfa40e5468eef5635a914bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TapAreaDestroy
-  Working: 0
+  Working: 1
