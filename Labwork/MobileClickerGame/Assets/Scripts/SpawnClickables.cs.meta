@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 7cbaee7a58cac5c499c963a45b7089f4
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Temp1: {fileID: 1970549960135367223, guid: d368c749e641d284eb11a32f76a15b9a, type: 3}
+  - Temp2: {fileID: 4327853479548283208, guid: eaa0406a7c5079e42a37c916a11fed70, type: 3}
+  - Temp3: {fileID: 15198431378239209, guid: 174e4042b783fba408c1489ee55697ba, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

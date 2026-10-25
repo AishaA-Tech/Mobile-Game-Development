@@ -23,6 +23,7 @@ public class TapAreaDestroy : MonoBehaviour
             Working = true;
             Score++;
             Destroy(other.gameObject);
+            Destroy(this.gameObject);
         }
 
     }
