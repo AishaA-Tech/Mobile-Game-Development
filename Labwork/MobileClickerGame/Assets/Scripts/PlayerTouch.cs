@@ -6,6 +6,7 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't retur
 public class PlayerTouch : MonoBehaviour
 {
     public int Score;
+    public int TouchTimes;
 
     //Player Tap Destroy Object
     public GameObject PlayerTapArea;
@@ -14,6 +15,7 @@ public class PlayerTouch : MonoBehaviour
     void Start()
     {
         Score = 0;
+        TouchTimes = 0;
     }
 
 
@@ -27,6 +29,8 @@ public class PlayerTouch : MonoBehaviour
                 CameraPos.z = 0; //Ensuring objects appear on screen
                 Instantiate(PlayerTapArea, CameraPos, Quaternion.identity);
                 Debug.Log($"Screen pos of touch: {touch.screenPosition}");
+
+                TouchTimes++;
             }
             break;
         }
