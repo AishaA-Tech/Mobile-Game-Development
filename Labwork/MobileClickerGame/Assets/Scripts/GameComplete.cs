@@ -6,7 +6,7 @@ using TMPro;
 
 public class GameComplete : MonoBehaviour
 {
-    public int Score;
+    public static int Score;
     public TextMeshProUGUI FinalScore;
     public GameObject PlayerTouch;
 
