@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem.EnhancedTouch; //Unity Enhanced Touch reccomended
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't return errors
 
@@ -7,6 +8,9 @@ public class PlayerTouch : MonoBehaviour
 {
     public int Score;
     public int TouchTimes;
+
+    public bool GameComplete;
+    
 
     //Player Tap Destroy Object
     public GameObject PlayerTapArea;
@@ -16,6 +20,11 @@ public class PlayerTouch : MonoBehaviour
     {
         Score = 0;
         TouchTimes = 0;
+
+        GameComplete = false;
+        
+
+
     }
 
 
@@ -33,6 +42,15 @@ public class PlayerTouch : MonoBehaviour
                 TouchTimes++;
             }
             break;
+
+            
         }
+
+        if (TouchTimes >= 25)
+        {
+            GameComplete = true;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
     }
 }

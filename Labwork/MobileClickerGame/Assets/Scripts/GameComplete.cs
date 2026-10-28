@@ -1,7 +1,15 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+
 
 public class GameComplete : MonoBehaviour
 {
+    public int Score;
+    public TextMeshProUGUI FinalScore;
+    public GameObject PlayerTouch;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +19,7 @@ public class GameComplete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Score = PlayerTouch.GetComponent<PlayerTouch>().Score;
+        FinalScore.text = "" + Score;
     }
 }
