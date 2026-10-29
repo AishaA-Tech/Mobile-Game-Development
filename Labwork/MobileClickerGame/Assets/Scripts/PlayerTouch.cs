@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem.EnhancedTouch; //Unity Enhanced Touch reccomended
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't return errors
 
+
 public class PlayerTouch : MonoBehaviour
 {
     public int Score;
@@ -14,6 +15,11 @@ public class PlayerTouch : MonoBehaviour
 
     //Player Tap Destroy Object
     public GameObject PlayerTapArea;
+
+    protected void OnEnable()
+    {
+        EnhancedTouchSupport.Enable();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
