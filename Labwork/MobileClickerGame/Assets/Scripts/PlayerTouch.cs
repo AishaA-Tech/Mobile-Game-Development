@@ -7,16 +7,13 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't retur
 
 public class PlayerTouch : MonoBehaviour
 {
-    public int Score;
-    public int TouchTimes;
-
-    public bool GameComplete;
-    
+    public int Score; // Stores active score
+    public int TouchTimes; // Number of times player touches the screen
 
     //Player Tap Destroy Object
     public GameObject PlayerTapArea;
 
-    protected void OnEnable()
+    protected void OnEnable() //Allows script to use EnhancedTouch.Touch
     {
         EnhancedTouchSupport.Enable();
     }
@@ -26,35 +23,31 @@ public class PlayerTouch : MonoBehaviour
     {
         Score = 0;
         TouchTimes = 0;
-
-        GameComplete = false;
-        
-
-
+        // Setting variables to 0 when game starts
     }
 
 
     void Update()
     {
+        // Checking each touch on the screen
         foreach (Touch touch in Touch.activeTouches)
         { 
-            if (touch.isTap) //If the detected touch is a tap
+            if (touch.isTap) // If the detected touch is a tap
             {
                 Vector3 CameraPos = Camera.main.ScreenToWorldPoint(touch.screenPosition);
-                CameraPos.z = 0; //Ensuring objects appear on screen
-                Instantiate(PlayerTapArea, CameraPos, Quaternion.identity);
-                Debug.Log($"Screen pos of touch: {touch.screenPosition}");
+                CameraPos.z = 0; // Ensuring objects appear on screen
+                Instantiate(PlayerTapArea, CameraPos, Quaternion.identity); // Summoning the tap area object
+                Debug.Log($"Screen pos of touch: {touch.screenPosition}"); // Checking for functionality
 
-                TouchTimes++;
+                TouchTimes++; // Increasing touch number with each touch
             }
             break;
-
             
         }
 
-        if (TouchTimes >= 25)
+        if (TouchTimes >= 25) // Ending the game when the player has tapped 25 times
         {
-            GameComplete = true;
+            
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
