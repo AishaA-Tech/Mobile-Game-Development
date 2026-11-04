@@ -320,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &178554526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -495,7 +495,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &335376761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +527,99 @@ RectTransform:
   m_AnchoredPosition: {x: 237, y: 1972}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &387434188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 387434193}
+  - component: {fileID: 387434192}
+  - component: {fileID: 387434191}
+  - component: {fileID: 387434190}
+  - component: {fileID: 387434189}
+  m_Layer: 0
+  m_Name: Lab4Sandbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &387434189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387434188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6abbff6ca05389d4e9eef3a4d29cb166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CMP5402.Week4.Lab4Sandbox
+  geometryMaterial: {fileID: 2100000, guid: 4baaf45e68eeed042890dd83132fe175, type: 2}
+  sandboxCamera: {fileID: 0}
+  targetFramesPerSecond: 60
+--- !u!114 &387434190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387434188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec60a042f0ed1340b222a46d8eb0ac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CMP5402.Week4.Lab4PerformanceMonitor
+  showOverlay: 1
+  maximumSamples: 80000
+--- !u!114 &387434191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387434188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d42f18279fb93c4dac041e895dfed7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CMP5402.Week4.Lab4RenderingLoad
+  gridSize: 12
+  transparentLayers: 12
+--- !u!114 &387434192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387434188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56cd45485ab526c45be44236c88c466f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CMP5402.Week4.Lab4Workload
+  mode: 0
+  cpuIterations: 250000
+  allocationBytesPerFrame: 32768
+--- !u!4 &387434193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387434188}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &544687872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,3 +1633,4 @@ SceneRoots:
   - {fileID: 34479215}
   - {fileID: 281706642}
   - {fileID: 335376762}
+  - {fileID: 387434193}
