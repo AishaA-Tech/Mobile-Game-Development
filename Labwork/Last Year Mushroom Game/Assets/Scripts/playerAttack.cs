@@ -1,6 +1,7 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playerAttack : MonoBehaviour
 {
@@ -26,11 +27,6 @@ public class playerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.X)) //Player attacks with X
-        {
-            Attack();
-        }
-
         if (is_attacking) //if the player is attacking, a timer goes off
         {
             timer += Time.deltaTime;
@@ -41,6 +37,13 @@ public class playerAttack : MonoBehaviour
                 AttackArea.SetActive(is_attacking);
             }
 
+        }
+    }
+    void Attack(InputAction.CallbackContext context)
+    {
+        if (context.performed) //Player attacks with X
+        {
+            Attack();
         }
     }
 }
