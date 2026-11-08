@@ -37,9 +37,10 @@ public class PoolingClickables : MonoBehaviour
         return Object;
     }
 
+    //access from other scripts
     public GameObject GetClickableTemp(Vector3 Location)
     {
-        return SpawnClickablesFromPool(ClickableTemp, Pool, Location);
+        return SpawnClickablesFromPool(ClickableTemp, PoolClickableTemp, Location);
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

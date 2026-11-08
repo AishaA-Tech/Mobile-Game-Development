@@ -12,19 +12,23 @@ public class SpawnClickables : MonoBehaviour
     private Vector2 SpawnBordersX;
 
     // Creating a list of clickables to spawn
-    List<GameObject> SpawnList = new List<GameObject>();
+
+    /*List<GameObject> SpawnList = new List<GameObject>();
     public GameObject Temp1;
     public GameObject Temp2;
-    public GameObject Temp3;
+    public GameObject Temp3;*/
+
+    [Header("Pooling Objects Attempt")]
+    [SerializeField] PoolingClickables PoolingObject;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Adding clickable game objects to spawn list
-        SpawnList.Add(Temp1);
+        /*SpawnList.Add(Temp1);
         SpawnList.Add(Temp2);
-        SpawnList.Add(Temp3);
+        SpawnList.Add(Temp3);*/
 
         // Assigning borders of spawning area
         SpawnBordersX.x = -1.9f;
@@ -47,14 +51,15 @@ public class SpawnClickables : MonoBehaviour
             while (Clickables < 5)
             {
                 // Choosing random clickable object
-                int SpawnListSpot = Random.Range(0, 3);
-                var SpawnThis = (SpawnList[SpawnListSpot]);
+                /*int SpawnListSpot = Random.Range(0, 3);
+                var SpawnThis = (SpawnList[SpawnListSpot]);*/
 
                 // Spawning random object at random coordinate
                 float randomPosY = Random.Range(SpawnBordersY.x, SpawnBordersY.y);
                 float randomPosX = Random.Range(SpawnBordersX.x, SpawnBordersX.y);
                 Vector3 screenPointSpawn = new Vector3(randomPosX, randomPosY, 0);
-                Instantiate(SpawnThis, screenPointSpawn, SpawnThis.transform.rotation);
+                /*Instantiate(SpawnThis, screenPointSpawn, SpawnThis.transform.rotation);*/
+                PoolingObject.GetClickableTemp(screenPointSpawn);
                 Clickables++;
                 yield return new WaitForSeconds(1.0f); // Waiting time
             }
