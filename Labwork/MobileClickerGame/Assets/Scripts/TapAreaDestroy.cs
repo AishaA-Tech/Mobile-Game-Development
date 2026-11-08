@@ -23,7 +23,7 @@ public class TapAreaDestroy : MonoBehaviour
             Working = true; // Inidcating this part of the code is run
             Score++;
             // Destroying both the tap and clickable
-            other.gameObject.SetActive(false);
+            other.gameObject.SetActive(false); // Disabling the object instead of destroying it
             Destroy(this.gameObject);
         }
         PlayerTouch.GetComponent<PlayerTouch>().Score = Score; // Updating score
