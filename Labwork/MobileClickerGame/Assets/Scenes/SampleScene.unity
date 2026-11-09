@@ -521,7 +521,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.36320752, g: 1, b: 0.82827437, a: 0}
+  m_BackGroundColor: {r: 0.33067283, g: 0.45469463, b: 0.5169811, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1022,9 +1022,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cbaee7a58cac5c499c963a45b7089f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  Temp1: {fileID: 1970549960135367223, guid: d368c749e641d284eb11a32f76a15b9a, type: 3}
-  Temp2: {fileID: 4327853479548283208, guid: eaa0406a7c5079e42a37c916a11fed70, type: 3}
-  Temp3: {fileID: 15198431378239209, guid: 174e4042b783fba408c1489ee55697ba, type: 3}
+  PoolingObject: {fileID: 1218949165}
+--- !u!1 &1218949164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218949166}
+  - component: {fileID: 1218949165}
+  m_Layer: 0
+  m_Name: ClickablePooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1218949165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218949164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cc093d7bb370ff46b16aea33af7917b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PoolingClickables
+  ClickableTemp: {fileID: 15198431378239209, guid: 174e4042b783fba408c1489ee55697ba, type: 3}
+--- !u!4 &1218949166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218949164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1890.8148, y: 1353.4917, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1301842571 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3564745142836237413, guid: ac875e716aad7ad47a8d254fafef1c5f, type: 3}
@@ -1331,3 +1374,4 @@ SceneRoots:
   - {fileID: 5797920722542609749}
   - {fileID: 15080055}
   - {fileID: 2100401013}
+  - {fileID: 1218949166}
