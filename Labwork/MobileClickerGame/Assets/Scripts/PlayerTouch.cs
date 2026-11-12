@@ -7,7 +7,7 @@ using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch; //so it doesn't retur
 
 public class PlayerTouch : MonoBehaviour
 {
-    public int Score; // Stores active score
+    public int Score = 0; // Stores active score
     public int TouchTimes; // Number of times player touches the screen
 
     //Player Tap Destroy Object
@@ -21,7 +21,6 @@ public class PlayerTouch : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Score = 0;
         TouchTimes = 0;
         // Setting variables to 0 when game starts
     }
