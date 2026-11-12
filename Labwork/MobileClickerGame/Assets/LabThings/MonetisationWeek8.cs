@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; //added by me
 
 namespace CMP5402.Week8Lab
 {
@@ -124,6 +125,11 @@ namespace CMP5402.Week8Lab
             if (status != null)
                 status.text = "TEST ONLY - No real ads or payments\nLab coins: "
                     + (ledger?.coins ?? 0) + "\n" + message;
+        }
+
+        public void ContinueToGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2); //added by me
         }
     }
 }

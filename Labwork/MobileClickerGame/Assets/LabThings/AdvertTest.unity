@@ -290,9 +290,9 @@ RectTransform:
   - {fileID: 566528262}
   m_Father: {fileID: 470545635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 283.77924}
+  m_AnchorMin: {x: 0.5, y: 0.6047063}
+  m_AnchorMax: {x: 0.5, y: 0.6047063}
+  m_AnchoredPosition: {x: 0, y: 18.779236}
   m_SizeDelta: {x: 720.2694, y: 189.063}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &411370459
@@ -742,9 +742,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 470545635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.7544203}
-  m_AnchorMax: {x: 0.5, y: 0.7544203}
-  m_AnchoredPosition: {x: -0.000030517578, y: -2}
+  m_AnchorMin: {x: 0.5, y: 0.8504533}
+  m_AnchorMax: {x: 0.5, y: 0.8504533}
+  m_AnchoredPosition: {x: 20.4, y: 3}
   m_SizeDelta: {x: 502.3438, y: 87.4807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &851087111
@@ -879,9 +879,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 470545635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.7544203}
-  m_AnchorMax: {x: 0.5, y: 0.7544203}
-  m_AnchoredPosition: {x: -108.96, y: -237}
+  m_AnchorMin: {x: 0.40500003, y: 0.66}
+  m_AnchorMax: {x: 0.40500003, y: 0.66}
+  m_AnchoredPosition: {x: 2.040001, y: 2}
   m_SizeDelta: {x: 502.3438, y: 87.4807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &955915961
@@ -1016,9 +1016,9 @@ MonoBehaviour:
   status: {fileID: 1331442946}
   rewardButton: {fileID: 411370459}
   purchaseButton: {fileID: 1570329323}
-  testProfile: run-1
-  adOutcome: 0
-  shopAvailable: 1
+  testProfile: run-3
+  adOutcome: 1
+  shopAvailable: 0
   simulateSaveFailure: 0
   testOrderId: order-a
 --- !u!4 &1047244802
@@ -1070,9 +1070,9 @@ RectTransform:
   - {fileID: 1158477891}
   m_Father: {fileID: 470545635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000026703, y: -246.4976}
+  m_AnchorMin: {x: 0.5, y: 0.4055798}
+  m_AnchorMax: {x: 0.5, y: 0.4055798}
+  m_AnchoredPosition: {x: 0.000026703, y: -7.4976044}
   m_SizeDelta: {x: 461.5439, y: 105.1871}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1117187168
@@ -1118,7 +1118,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1117187169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1047244801}
+        m_TargetAssemblyTypeName: CMP5402.Week8Lab.Week8MonetisationLab, Assembly-CSharp
+        m_MethodName: ContinueToGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117187169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,9 +1338,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 470545635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.7544203}
-  m_AnchorMax: {x: 0.5, y: 0.7544203}
-  m_AnchoredPosition: {x: 113.97, y: -525}
+  m_AnchorMin: {x: 0.6025812, y: 0.5451518}
+  m_AnchorMax: {x: 0.6025812, y: 0.5451518}
+  m_AnchoredPosition: {x: -6.029999, y: 5}
   m_SizeDelta: {x: 502.3438, y: 87.4807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233274037
@@ -1463,9 +1475,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 470545635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.7544203}
-  m_AnchorMax: {x: 0.5, y: 0.7544203}
-  m_AnchoredPosition: {x: 0, y: -74.868}
+  m_AnchorMin: {x: 0.5, y: 0.79315954}
+  m_AnchorMax: {x: 0.5, y: 0.79315954}
+  m_AnchoredPosition: {x: 0, y: 2}
   m_SizeDelta: {x: 798.8263, y: 58.2555}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1331442945

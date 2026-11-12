@@ -9,6 +9,6 @@ public class RestartButton : MonoBehaviour
     public void RestartPress()
     {
         Handheld.Vibrate(); // Vibration when game restarts
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
