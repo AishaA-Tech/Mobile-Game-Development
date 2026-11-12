@@ -8,7 +8,7 @@ public class RestartButton : MonoBehaviour
     // Restarting the game on game complete screen
     public void RestartPress()
     {
-        Handheld.Vibrate();
+        Handheld.Vibrate(); // Vibration when game restarts
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
