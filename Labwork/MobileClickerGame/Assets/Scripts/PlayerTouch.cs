@@ -39,6 +39,9 @@ public class PlayerTouch : MonoBehaviour
                 Instantiate(PlayerTapArea, CameraPos, Quaternion.identity); // Summoning the tap area object
                 Debug.Log($"Screen pos of touch: {touch.screenPosition}"); // Checking for functionality
 
+                //Vibrate on tap
+                Handheld.Vibrate();
+
                 TouchTimes++; // Increasing touch number with each touch
             }
             break;
