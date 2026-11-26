@@ -44,8 +44,7 @@ public class PlayerTouch : MonoBehaviour
 
                 TouchTimes++; // Increasing touch number with each touch
             }
-            break;
-            
+             //Had to take away break line
         }
 
         if (TouchTimes >= 25) // Ending the game when the player has tapped 25 times

@@ -46,7 +46,7 @@ public class ClickableSpawner : MonoBehaviour
             }
             SpawnWaves++;
             Clickables = 0; // Resetting so another wave of spawns is possible
-            yield return new WaitForSeconds(5.0f); // Waiting time
+            yield return new WaitForSeconds(1.0f); // Waiting time
 
         }
     }
