@@ -385,7 +385,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 335376761}
         m_TargetAssemblyTypeName: SandboxButton, Assembly-CSharp
         m_MethodName: SandboxPress
         m_Mode: 1
@@ -479,7 +479,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &335376760
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,8 +620,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> FixingPlayerTaps
 --- !u!1 &544687872
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,3 +1632,5 @@ SceneRoots:
   - {fileID: 655424031}
   - {fileID: 34479215}
   - {fileID: 281706642}
+  - {fileID: 335376762}
+  - {fileID: 387434193}
