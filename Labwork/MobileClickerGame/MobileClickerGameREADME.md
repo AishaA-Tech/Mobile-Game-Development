@@ -12,3 +12,7 @@
 https://docs.unity3d.com/Packages/com.unity.inputsystem@1.0/api/UnityEngine.InputSystem.EnhancedTouch.EnhancedTouchSupport.html
 
 **Optimising by Pooling Objects**: https://medium.com/unity-coder-corner/unity-creating-an-object-pooling-system-5cdf59c758ac
+
+## Wiki References
+
+Why pooling is beneficial: https://medium.com/@vayupuththira2017/boosting-game-performance-with-object-pooling-why-every-developer-should-care-75dbe17ae054
